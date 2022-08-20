@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Moon Dance', cursive;
+    text-align: center;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.flx-header {
+    background-color: #29f93a;
+    padding: 5px;
+    height: 50px;
+}
+
+.flx-main-container {
+    display: flex;
+    flex: 1;
+}
+
+.flx-nav,
+.flx-aside {
+    background: linear-gradient(45deg, rgb(251, 0, 255), #29f9da);
+    padding: 5px;
+    flex: 1;
+}
+
+.flx-article-section {
+    background-color: #734bea;
+    padding: 5px;
+    flex: 4;
+}
+
+.flx-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+
+.flx-footer {
+    background-color: #29f93a;
+    height: 50px;
+}
