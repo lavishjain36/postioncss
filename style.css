@@ -1,203 +1,51 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-h1 {
-    font-size: 60px;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 36px;
-}
-
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 26px;
 }
 
-img {
-    max-width: 100%;
-    vertical-align: bottom;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(51, 37, 250);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.wrapper {
-    width: 1200;
-    margin: 0 auto;
-    clear: both;
-}
-
-#header {
-    overflow: hidden;
-    padding: 20px 0;
-
-}
-
-.logo {
-    float: left;
-    width: 200px;
-}
-
-#nav {
-    float: right;
-    margin: 0;
-    padding: 0;
-}
-
-/* Parent Child relation in css */
-#nav a {
-    float: left;
-    padding: 30px;
-    height: 20px;
-    font-size: 18px;
-    text-decoration: none;
-    margin-right: 20px;
-    color: rgb(51, 37, 250);
-}
-
-#nav a:hover {
-    color: rgb(255, 82, 20);
-}
-
-#nav a:nth-child(even) {
-    background-color: rgb(94, 255, 20);
-}
-
-#nav a:nth-child(odd) {
-    background-color: rgb(20, 235, 255);
-
-}
-
-#nature {
-    height: auto;
-    padding: 180px 0;
+div {
+    background: rgb(7, 240, 42);
+    background-size: cover;
+    border: 3px solid red;
+    width: 390px;
     text-align: center;
-    color: rgb(255, 249, 249);
-    background: url("https://c1.staticflickr.com/9/8715/16720507370_2465886b1b_z.jpg") no-repeat center bottom/cover
-}
-
-#nature a {
-    padding: 20px 30px;
-    background: rgb(130, 255, 63);
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-#nature a:hover {
-    background: black;
-    transition: all 0.8s ease;
-}
-
-#aboutus {
-    padding: 50px 0;
-    text-align: center;
-    color: rgb(82, 27, 248);
-
-}
-
-#mission {
-    height: auto;
-    padding: 50px 0;
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_5LrIOBcxb2W77nkgaPPNZjmeym1ULLEuNwa6l8s7oZO_i6_1eAtPhJ_aR6NTAH6diI&usqp=CAU") no-repeat center bottom/cover;
-    color: rgb(255, 255, 255);
-    overflow: hidden;
-}
-
-#mission .mission_head {
-    text-align: center;
-}
-
-#mission .mission_text {
-    float: left;
-    height: auto;
-    width: 575px;
-    margin-right: 50px;
-}
-
-#team {
-    padding: 100px 0;
-    height: auto;
-    overflow: hidden;
-    background: rgb(216, 209, 209);
-    color: rgb(17, 20, 20);
-}
-
-#team .team_head {
-    text-align: center;
-}
-
-
-#team .team {
-    width: 290px;
-    float: left;
-    padding-bottom: 7px;
-    margin-right: 10px;
-    text-align: center;
+    box-shadow: 5px 10px 10px blue;
     border-radius: 30px;
+    margin: 30px;
 }
 
-#team .team img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.static {
+    position: static;
+    top: 400px;
 }
 
-#contactus {
-    padding: 50px 0;
-    height: auto;
-    overflow: hidden;
-    color: blue;
+/* .relative {
+    position: relative;
+    left: 400px;
+    top: 300px;
+
+} */
+
+.ancestor {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    left: 400px;
 }
 
-#contactus .contactus_head {
-    text-align: center;
+.absolute {
+    position: absolute;
+    left: 500px;
+    top: 300px;
 }
 
-#contactus .contactus {
-    float: left;
-    width: 400px;
-    margin-right: 15px;
-    margin-bottom: 50px;
-    text-align: center;
-    color: rgb(242, 22, 234);
-    font-size: 20px;
-    font-weight: bold;
+.fixed {
+    position: fixed;
+    top: 100px;
+    left: 300px;
 }
 
-/* Parent child relation */
-#contactus .contactus_form input {
-    padding: 20px;
-    display: block;
-    font-size: 18px;
-
-
-}
-
-
-#contactus .contactus_form textarea {
-    padding: 20px;
-    display: block;
-    font-size: 18px;
-}
-
-
-#footer {
-    padding: 10px 0;
-    text-align: center;
-    background: rgb(123, 123, 206);
+.sticky {
+    position: sticky;
+    top: 100px;
 }
