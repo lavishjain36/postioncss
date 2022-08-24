@@ -109,20 +109,20 @@ div {
     top: 300px;
 } */
 
-/* .ancestor {
+.ancestor {
     width: 500px;
     height: 300px;
     position: relative;
     left: 400px;
     top: 200px;
 
-} */
+}
 
-/* .absolute {
+.absolute {
     position: absolute;
     left: 500px;
     top: 300px;
-} */
+}
 
 .fixed {
     position: fixed;
